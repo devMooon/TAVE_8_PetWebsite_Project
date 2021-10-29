@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.css">
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/2.0.0/toastui-editor.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light"  id="mainNav" style="background-color: #e3f2fd;">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><i class="fas fa-paw"></i>&nbsp;&nbsp; 멍냥</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Main</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                예약하기
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"><i class="far fa-hospital"></i>&nbsp;&nbsp; 병원</a>
+                                <a class="dropdown-item" href="#"><i class="far fa-user"></i>&nbsp;&nbsp; 미용실</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-hotel"></i>&nbsp;&nbsp; 호텔/유치원</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-coffee"></i>&nbsp;&nbsp; 카페</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">기타</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                커뮤니티
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">노하우 공유</a>
+                                <a class="dropdown-item" href="#">경험 공유</a>
+                                <a class="dropdown-item" href="#">멍냥 자랑</a>
+                                <a class="dropdown-item" href="#">질문 게시판</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                나의 프로필
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">나의 프로필</a>
+                                <a class="dropdown-item" href="#">나의 예약현황</a>
+                                <a class="dropdown-item" href="#">내가 쓴 글</a>
+                                <a class="dropdown-item" href="#">내가 쓴 댓글</a>
+                            </div>
+                        </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" style="height: 30px;" type="search" placeholder="Search" aria-label="Search">
+                    <a class="pl-0" href="login.html" style="color: black;" type="submit"><i class="fas fa-search"></i></a>
+                </form>
+                <form class="form-inline my-2 my-lg-0"></form>
+                    <a class="nav-link btn btn-outline-secondary py-1 px-2 btn-sm my-2 mr-lg-1 ml-lg-3 mb-sm-2" href="login.html" style="font-size: 5px;">로그인</a>
+                    <a class="nav-link btn btn-outline-secondary py-1 px-2 btn-sm my-2 mb-sm-2" href="signup.html" style="font-size: 5px;">회원가입</a> 
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page header with logo and tagline-->
+    <header class="pt-5 pb-3 bg-light border-bottom">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1 class="fw-bolder">멍냥 사이트</h1>
+                <p class="lead mb-0">멍냥 호텔예약과 병원예약을 한번에! 간편한 예매를 경험 해보세요</p> 
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row my-5 justify-content-around">
+            <div class="col-lg-7">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row my-2 mx-3">
+                            <h4 class="my-1" style="font-family: 'Gaegu'"><span>10</span>월 <span>10</span>일 <span>일</span>요일</th></h4>
+                        </div>                      
+                    </div>
+                        
+                    <div class="container mt-3">
+                        <div>
+                            <img src="image/그림일기.png" class="card-img-top img-fluid"  style="height: 220px; border-radius: 5px;" alt="...">
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div>
+                            <table class="table table-bordered" style="font-family:'Gaegu'; text-align:center;">
+                                <script>
+                                    var 일기 = "오늘 멍멍이를 데리고 병원에 갔다 왔다. 날씨도 맑아서 산책도 다녀왔다.";
+                                    var num = 0;
+                                    document.write("<tbody>");
+                                    for (var i = 0; i < 4; i++){                               
+                                        document.write("<tr>");
+                                        for (var j = 0; j < 10; j++){
+                                            document.write("<td>" + 일기.charAt(num) + "</td>");
+                                            num += 1;
+                                        }
+                                        document.write("</tr>");
+                                    }
+                                    document.write("</tbody>");
+                                </script>
+                            </table>
+                            
+                        </div>
+                        <a class="btn btn-warning btn-sm mr-2" style="font-family:'Gaegu';" href="#">일기 수정하기</a>
+                        <a class="btn btn-warning btn-sm" style="font-family:'Gaegu';" href="#">일기 쓰러 가기</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">       
+                <div class="row my-lg-0 my-sm-5">
+                    <div style="border: 1px solid rgb(218, 218, 218); border-radius: 5px;">
+                        <div id="carouselExampleCaptions" class="carousel slide justify-content-around" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="container">
+                                        <div class="row my-3 mx-3">
+                                            <div class="col-6">
+                                                <img src="https://dnvefa72aowie.cloudfront.net/origin/smb/202003/b4aae571622da98f596dfcbf43c8c8f8fdb31bd1c8419ba02a677f04bfad0717.webp?q=95&s=1440x1440&t=inside" class="d-block img-fluid" alt="...">
+                                            </div>
+                                            <div class="col-6">                                                        
+                                                <h5><span class="badge badge-warning">Best</span> 땡땡 동물병원</h5>
+                                                <p class="my-1"><span style="font-size: small;">4.3 ★★★★☆</span></p>
+                                                <div style="font-size: small;">경기도 용인시 수지구 성복1로 62 KCC스위첸 101동 111, 112호.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container">
+                                        <div class="row my-3 mx-3">
+                                            <div class="col-6">
+                                                <img src="https://cocotimes.kr/wp-content/uploads/2019/11/tica114m17080929_l.jpg" class="d-block img-fluid" alt="...">
+                                            </div>
+                                            <div class="col-6">                                                        
+                                                <h5><span class="badge badge-warning">Best</span> 미용실</h5>
+                                                <p class="my-1"><span style="font-size: small;">4.3 ★★★★☆</span></p>
+                                                <div style="font-size: small;">경기도 용인시 수지구 성복1로 62 KCC스위첸 101동 111, 112호.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container">
+                                        <div class="row my-3 mx-3">
+                                            <div class="col-6">
+                                                <img src="https://dnvefa72aowie.cloudfront.net/origin/smb/202003/b4aae571622da98f596dfcbf43c8c8f8fdb31bd1c8419ba02a677f04bfad0717.webp?q=95&s=1440x1440&t=inside" class="d-block img-fluid" alt="...">
+                                            </div>
+                                            <div class="col-6">                                                        
+                                                <h5><span class="badge badge-warning">Best</span> 호텔/유치원</h5>
+                                                <p class="my-1"><span style="font-size: small;">4.3 ★★★★☆</span></p>
+                                                <div style="font-size: small;">경기도 용인시 수지구 성복1로 62 KCC스위첸 101동 111, 112호.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container">
+                                        <div class="row my-3 mx-3">
+                                            <div class="col-6">
+                                                <img src="https://dnvefa72aowie.cloudfront.net/origin/smb/202003/b4aae571622da98f596dfcbf43c8c8f8fdb31bd1c8419ba02a677f04bfad0717.webp?q=95&s=1440x1440&t=inside" class="d-block img-fluid" alt="...">
+                                            </div>
+                                            <div class="col-6">                                                        
+                                                <h5><span class="badge badge-warning">Best</span> 카페</h5>
+                                                <p class="my-1"><span style="font-size: small;">4.3 ★★★★☆</span></p>
+                                                <div style="font-size: small;">경기도 용인시 수지구 성복1로 62 KCC스위첸 101동 111, 112호.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon ml-0 pl-0" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-lg-3 my-sm-5">
+                    <div style="border: 1px solid rgb(218, 218, 218); border-radius: 5px; width: 600px;">
+                        <div class="row my-3 mx-3">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">예약현황</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">새로 생긴 가게</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">최근 본 가게</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row my-3 mx-3">
+                            <div class="tab-content mt-3 ml-3" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="mb-2"><span class="badge badge-pill badge-primary">D-6</span>&nbsp;&nbsp;&nbsp;땡땡 병원</div>
+                                    <div class="mb-2"><span class="badge badge-pill badge-secondary">D-10</span>&nbsp;&nbsp;&nbsp;멍냥 카페</div>
+                                    <div class="mb-2"><span class="badge badge-pill badge-info">D-12</span>&nbsp;&nbsp;&nbsp;예쁜 미용실</div>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">네모네모 카페 오픈!!</div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">동그라미 병원 This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:This is a great place to talk about your webpage.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer-->
+    <footer class="py-3 bg-dark">
+        <div class="container"><p class="py-5 text-center text-white">Copyright &copy; 개발자 : 김현지 나림 문서연 박혜린 최수정 </p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <script src="https://kit.fontawesome.com/9e746fd04f.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
