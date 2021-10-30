@@ -1,8 +1,8 @@
 <template>
     <!-- navbar -->
-    <div>
-        <b-container class="bv-example-row">
-            <b-navbar toggleable="lg" variant="faded" type="light">
+
+        <b-navbar class="fixed-top" toggleable="lg" type="light">
+            <b-container class="bv-example-row">
                 <b-navbar-brand href="#">NavBar</b-navbar-brand>
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -33,9 +33,8 @@
                         <a class="nav-link btn btn-outline-secondary btn-sm" href="login.html">로그인</a>
                         <a class="nav-link btn btn-outline-secondary  btn-sm" href="signup.html">회원가입</a>           
                 </b-collapse>
-            </b-navbar>
-        </b-container>
-    </div>
+            </b-container>
+        </b-navbar>
 </template>
 
 <script>
