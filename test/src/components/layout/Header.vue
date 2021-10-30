@@ -1,6 +1,6 @@
 <template>
     <!-- navbar -->
-    <b-navbar class="fixed-top" toggleable="lg" type="light" style="background-color: #f3f3f3;">
+    <b-navbar class="fixed-top bg-white topbar mb-4 static-top shadow" toggleable="lg" type="light" style="background-color: #f3f3f3;">
         <b-container class="bv-example-row">
             <b-navbar-brand href="#">NavBar</b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
