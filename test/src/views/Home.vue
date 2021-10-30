@@ -1,6 +1,6 @@
 <template>
+<!-- Page header with logo and tagline-->
     <div>
-        <!-- Page header with logo and tagline-->
         <header class="pt-5 pb-3 bg-light border-bottom">
             <div class="container">
                 <div class="text-center my-5">
@@ -33,11 +33,75 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-5">       
+                
+                <div class="col-lg-5">  
                     <div class="row my-lg-0 my-sm-5">
                         <div style="border: 1px solid rgb(218, 218, 218); border-radius: 5px;">
-                            <div id="carouselExampleCaptions" class="carousel slide justify-content-around" data-ride="carousel">
+                            <div>
+                                <b-carousel
+                                id="carousel-1"
+                                v-model="slide"
+                                :interval="4000"
+                                controls
+                                indicators
+                                background="#ababab"
+                                img-width="1024"
+                                img-height="480"
+                                style="text-shadow: 1px 1px 2px #333;"
+                                @sliding-start="onSlideStart"
+                                @sliding-end="onSlideEnd"
+                                >
+                                <!-- Text slides with image -->
+                                <b-carousel-slide
+                                    caption="First slide"
+                                    text="Nulla vitae elit libero, a pharetra augue mollis interdum."
+                                    img-src="https://picsum.photos/1024/480/?image=52"
+                                ></b-carousel-slide>
+
+                                <!-- Slides with custom text -->
+                                <b-carousel-slide img-src="https://dnvefa72aowie.cloudfront.net/origin/smb/202003/b4aae571622da98f596dfcbf43c8c8f8fdb31bd1c8419ba02a677f04bfad0717.webp?q=95&s=1440x1440&t=inside">
+                                    <h1>Hello world!</h1>
+                                </b-carousel-slide>
+
+                                <!-- Slides with image only -->
+                                <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide>
+
+                                <!-- Slides with img slot -->
+                                <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
+                                <b-carousel-slide>
+                                    <template #img>
+                                    <img
+                                        class="d-block img-fluid w-100"
+                                        width="1024"
+                                        height="480"
+                                        src="https://picsum.photos/1024/480/?image=55"
+                                        alt="image slot"
+                                    >
+                                    </template>
+                                </b-carousel-slide>
+
+                                <!-- Slide with blank fluid image to maintain slide aspect ratio -->
+                                <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
+                                    <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
+                                    a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
+                                    </p>
+                                </b-carousel-slide>
+                                </b-carousel>
+                                
+                                <div>
+                                    <h5><span class="badge badge-warning">Best</span> 땡땡 동물병원<b-badge>New</b-badge></h5>
+                                    <p class="my-1"><span style="font-size: small;">4.3 ★★★★☆</span></p>
+                                    <p style="font-size: small;">경기도 용인시 수지구 성복1로 62 KCC스위첸 101동 111, 112호.</p>
+                                </div>
+ 
+                                <p class="mt-4">
+                                Slide #: {{ slide }}<br>
+                                Sliding: {{ sliding }}
+                                </p>
+                            </div>
+
+                            <div id="carouselExampleCaptions" class="carousel justify-content-around" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div class="container">
@@ -45,8 +109,9 @@
                                                 <div class="col-6">
                                                     <img src="https://dnvefa72aowie.cloudfront.net/origin/smb/202003/b4aae571622da98f596dfcbf43c8c8f8fdb31bd1c8419ba02a677f04bfad0717.webp?q=95&s=1440x1440&t=inside" class="d-block img-fluid" alt="...">
                                                 </div>
-                                                <div class="col-6">                                                        
-                                                    <h5><span class="badge badge-warning">Best</span> 땡땡 동물병원</h5>
+                                                <div class="col-6">
+                                                    <b-badge pill variant="warning">Best</b-badge>                              
+                                                    <h5><b-badge pill variant="warning">Best</b-badge>땡땡 동물병원</h5>
                                                     <p class="my-1"><span style="font-size: small;">4.3 ★★★★☆</span></p>
                                                     <div style="font-size: small;">경기도 용인시 수지구 성복1로 62 KCC스위첸 101동 111, 112호.</div>
                                                 </div>
@@ -111,17 +176,17 @@
                     <div class="row my-lg-3 my-sm-5">
                         <div style="border: 1px solid rgb(218, 218, 218); border-radius: 5px; width: 600px;">
                             <div class="row my-3 mx-3">
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">예약현황</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
+                                <b-nav tabs>
+                                    <b-nav-item role="tab" active>예약현황</b-nav-item>
+                                    <b-nav-item role="tab">예약현황</b-nav-item>
+                                    <b-nav-item role="tab">예약현황</b-nav-item>
+                                    <b-nav-item role="presentation">
                                         <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">새로 생긴 가게</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
+                                    </b-nav-item>
+                                    <b-nav-item role="presentation">
                                         <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">최근 본 가게</a>
-                                    </li>
-                                </ul>
+                                    </b-nav-item>
+                                </b-nav>
                             </div>
                             <div class="row my-3 mx-3">
                                 <div class="tab-content mt-3 ml-3" id="myTabContent">
@@ -141,8 +206,22 @@
         </div>
     </div>
 </template>
+
 <script>
 export default {
-
-};
+data() {
+    return {
+    slide: 0,
+    sliding: null
+    }
+},
+methods: {
+    onSlideStart(slide) {
+    this.sliding = true
+    },
+    onSlideEnd(slide) {
+    this.sliding = false
+    }
+}
+}
 </script>
