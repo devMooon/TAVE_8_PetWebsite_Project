@@ -27,9 +27,7 @@
                         </div>
                         
                         <div class="card-body">
-                            
-                            <a class="btn btn-warning btn-sm mr-2" style="font-family:'Gaegu';" href="#">일기 수정하기</a>
-                            <a class="btn btn-warning btn-sm" style="font-family:'Gaegu';" href="#">일기 쓰러 가기</a>
+                            <b-button class="mx-2 float-right" size="sm" variant="warning" href="#">자세히 보기</b-button>
                         </div>
                     </div>
                 </div>
