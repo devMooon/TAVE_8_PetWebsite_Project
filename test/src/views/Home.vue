@@ -22,7 +22,7 @@
                             
                         <div class="container mt-3">
                             <div>
-                                <img src="image/그림일기.png" class="card-img-top img-fluid"  style="height: 220px; border-radius: 5px;" alt="...">
+                                <img src="https://i.ytimg.com/vi/rPluY7E6wbU/maxresdefault.jpg" class="card-img-top img-fluid"  style="height: 220px; border-radius: 5px;" alt="...">
                             </div>
                         </div>
                         
@@ -106,7 +106,7 @@
 </template>
 
 <script>
-export default {
+export default {                             
 data() {
     return {
     slide: 0,
