@@ -13,27 +13,21 @@
                         <button type="submit" class="btn btn-primary btn-sm mt-lg-1 my-sm-2 ml-lg-2 mx-sm-0">중복확인</button>
                     </div>
                     
-                    <b-form @submit.stop.prevent>
+                    <b-form @submit.stop.prevent class="my-3">
                         <label for="text-password">비밀번호</label>
                         <b-form-input type="password" id="text-password" aria-describedby="password-help-block"></b-form-input>
                         <b-form-text id="password-help-block">
-                        Your password must be 8-20 characters long, contain letters and numbers, and must not
-                        contain spaces, special characters, or emoji.
+                            영문자, 특수문자, 숫자 포함 8자 이상
                         </b-form-text>
                     </b-form>
-                    <b-form @submit.stop.prevent>
+                    <b-form @submit.stop.prevent class="mt-3 mb-5">
                         <label for="text-password">비밀번호</label>
                         <b-form-input type="password" id="text-password" aria-describedby="password-help-block"></b-form-input>
                     </b-form>
 
-                    
-
-                    <div class="row" style="height: 30px;"></div>
                     <hr>
-                    <div class="row" style="height: 30px;"></div>
 
-                    
-                    <div class="form-group my-3">
+                    <div class="form-group mt-5 mb-3">
                         <div><label for="validationCustom03">닉네임</label></div>
                         <input type="text" class="form-control" id="validationCustom02" style="width: 390px; display: inline-block; font-size:small;" placeholder="닉네임을 입력해 주세요" required>
                         <button type="submit" class="btn btn-primary btn-sm mt-lg-1 my-sm-2 ml-lg-2 mx-sm-0">중복확인</button>
