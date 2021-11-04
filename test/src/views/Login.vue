@@ -6,11 +6,11 @@
             <div class=" row mx-5 justify-content-around">
                 <div class="col-lg-3 col-sm-0"></div>
                 <div class="col-lg-6 col-sm-12">
-                    <div class="form-group">
+                    <div class="form-group my-5">
                         <label for="exampleInputEmail1" style="font-weight: 900;">이메일</label>
                         <input type="email" placeholder="이메일을 입력하세요." class="form-control img-fluid" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group my-5">
                         <label for="exampleInputPassword1" style="font-weight: 900;">비밀번호</label>
                         <input type="password" placeholder="비밀번호를 입력하세요." class="form-control img-fluid" id="exampleInputPassword1">
                     </div>
